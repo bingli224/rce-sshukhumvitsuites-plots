@@ -583,22 +583,26 @@
 ( defun C:plotplan ( / )
 	( command "plot"
 		"Y"	;;; detailed plot config
+
 		"" "DWG To PDF.pc3"	;;; model layer name
+		;"" "Microsoft Print to PDF"	;;; model layer name
+
 		"ISO A3 (420.00 x 297.00 MM)"
 		;"ISO A1 (841.00 x 594.00 MM)"
 		;"ISO A4 (297.00 x 210.00 MM)"
+
 		"I"	;;; paper unit: inches
 		"L"	;;; landscape
 		"N"	;;; not upside down
-		"D"	;;; Display
+		"D"	;;; Display	[Display/Extents/Limits/View/Window]
 		"F"	;;; fit
-		"C"	;;; Center
-		"Y"	;;; plot style
+		"C"	;;; Center	[Center/(x,y)]
+		"Y"	;;; plot style	[Yes/No]
 		;"."	;;; no plot style table name
 		;"grayscale.ctb"	;;; grayscale style
 		"acad.ctb"	;;; normal style
-		"Y"	;;; plot with lineweights
-		"a"	;;; shade plot setting AS DISPLAYED
+		"Y"	;;; plot with lineweights	[Yes/No]
+		"a"	;;; shade plot setting AS DISPLAYED	[As displayed/lagecy Wireframe/legacy Hidden/Visual style/Rendere]
 		;flname	;;; output filename
 		;;; output filename
 		( strcat
