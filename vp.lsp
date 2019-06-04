@@ -42,6 +42,10 @@
 ;;; 11:37 THA 01/06/2019
 ;;;
 ;;; Update ppx() to show the exit instructions instead of the frame
+;;;
+;;; 16:26 THA 04/06/2019
+;;;
+;;; Update pp() to show the exit position out of the rooms.
 
 
 ( setq	nLvlPrev	1
@@ -559,6 +563,8 @@
 					( command	"_layer" "on"
 							( strcat
 								"Exit.MapInfo*,"
+								"Exit.General,"
+								"Exit.General[[]*" nLvl "*[]],"
 								"Exit.MapInfo[[]*" nLvl "*[]]"
 							)
 					"" )
