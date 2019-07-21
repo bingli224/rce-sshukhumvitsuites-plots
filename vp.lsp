@@ -46,6 +46,10 @@
 ;;; 16:26 THA 04/06/2019
 ;;;
 ;;; Update pp() to show the exit position out of the rooms.
+;;;
+;;; 00:17 THA 22/07/2019
+;;;
+;;; Add visible layers for extension area (room10 to room18)
 
 
 ( setq	nLvlPrev	1
@@ -222,6 +226,9 @@
 					"pebbles[[]*" nLvl "*[]],"
 					"gas*[[]*" nLvl "*[]],"
 
+					;;; new layers
+					"COLUMN,Defpoints,DIMN,DOOR,ELECTRICAL,ELEVATON 01,F.CEIL HATCH,F.CEILING,FIXTURE,FLOORING,FURNITURE,HATCHING,TEXT,WALL,"
+
 					;;; debugging layers
 					"0[[]*" nLvl "*[]],"
 					"0"
@@ -285,6 +292,9 @@
 							"mirror[[]*" nLvl "*[]],"
 							"column*[[]*" nLvl "*[]],"
 							"window[[]*" nLvl "*[]],"
+
+							;;; new layers
+							"COLUMN,Defpoints,DIMN,DOOR,ELECTRICAL,ELEVATON 01,F.CEIL HATCH,F.CEILING,FIXTURE,TEXT,WALL,"
 
 							;;; debugging layers
 							"0[[]*" nLvl "*[]],"
@@ -457,6 +467,9 @@
 
 					;"pebbles[[]*" nLvl "*[]],"
 					;"gas*[[]*" nLvl "*[]],"
+
+					;;; new layers
+					"COLUMN,Defpoints,DIMN,DOOR,ELECTRICAL,ELEVATON 01,F.CEIL HATCH,F.CEILING,FIXTURE,TEXT,WALL,"
 
 					;;; debugging layers
 					"0[[]*" nLvl "*[]],"
