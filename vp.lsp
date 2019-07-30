@@ -50,6 +50,10 @@
 ;;; 00:17 THA 22/07/2019
 ;;;
 ;;; Add visible layers for extension area (room10 to room18)
+;;;
+;;; 09:47 THA 27/07/2019
+;;;
+;;; Fix layer name
 
 
 ( setq	nLvlPrev	1
@@ -227,7 +231,7 @@
 					"gas*[[]*" nLvl "*[]],"
 
 					;;; new layers
-					"COLUMN,Defpoints,DIMN,DOOR,ELECTRICAL,ELEVATON 01,F.CEIL HATCH,F.CEILING,FIXTURE,FLOORING,FURNITURE,HATCHING,TEXT,WALL,"
+					"COLUMN,Defpoints,DIMN,DOOR,ELECTRICAL,ELEVATION 01,F.CEIL HATCH,F.CEILING,FIXTURE,FLOORING,FURNITURE,HATCHING,WALL,"
 
 					;;; debugging layers
 					"0[[]*" nLvl "*[]],"
@@ -294,7 +298,7 @@
 							"window[[]*" nLvl "*[]],"
 
 							;;; new layers
-							"COLUMN,Defpoints,DIMN,DOOR,ELECTRICAL,ELEVATON 01,F.CEIL HATCH,F.CEILING,FIXTURE,TEXT,WALL,"
+							"COLUMN,Defpoints,DIMN,DOOR,ELECTRICAL,ELEVATION 01,F.CEIL HATCH,F.CEILING,FIXTURE,WALL,"
 
 							;;; debugging layers
 							"0[[]*" nLvl "*[]],"
@@ -469,7 +473,7 @@
 					;"gas*[[]*" nLvl "*[]],"
 
 					;;; new layers
-					"COLUMN,Defpoints,DIMN,DOOR,ELECTRICAL,ELEVATON 01,F.CEIL HATCH,F.CEILING,FIXTURE,TEXT,WALL,"
+					"COLUMN,Defpoints,DIMN,DOOR,ELECTRICAL,ELEVATION 01,F.CEIL HATCH,F.CEILING,WALL,"
 
 					;;; debugging layers
 					"0[[]*" nLvl "*[]],"
@@ -557,6 +561,7 @@
 				( command	"_layer" "on"
 						( strcat
 							"text.layout*,"
+							"text,"
 							"logo*,"
 							"info[[]*" nLvl "*[]]"
 						)
